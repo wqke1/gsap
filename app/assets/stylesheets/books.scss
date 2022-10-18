@@ -1,0 +1,22 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  height: 100vh;
+}
+
+section, footer {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: green;
+}
