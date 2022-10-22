@@ -1,22 +1,198 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 html {
-  scroll-behavior: smooth;
+  overflow-y: scroll
 }
 
-main {
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  width: 180px;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2779a7;
+  color: white;
+  font-size: 18px;
+}
+
+.loading-home {
+  background-color: #ECD06F;
+  position: absolute;
+  width: 100%;
   height: 100vh;
+  z-index: 10;
+  margin: 0;
+  top: 0;
+  left: 0;
 }
 
-section, footer {
-  height: 100vh;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home {
+  width: 100%;
+  margin: auto;
+
+  nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECD06F;
+    border-radius: 12px;
+    padding: 1% 2% 1% 2%;
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 2%;
+    z-index: 10;
+
+    .nav-link {
+      width: 22%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        margin-left: -20px;
+      }
+    }
+  }
+
+  main {
+    text-align: center;
+    margin-top: 4%;
+
+    h1 {
+      font-size: 86px;
+      margin: 0;
+    }
+    p {
+      width: 65%;
+      margin: auto;
+      padding: 2%;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .email {
+      margin-top: 3%;
+
+      input {
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: #F5F4F4;
+        width: 300px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .img-list {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: 10%;
+      z-index: -14;
+    }
+
+    #background-image {
+      width: 100%;
+      position: relative;
+      top: -30rem;
+      z-index: -15;
+    }
+
+    #ring {
+      top: 176px;
+      left: 221px;
+    }
+    #ring2 {
+      bottom: 660px;
+      left: 240px;
+    }
+    #shoes {
+      right: 260px;
+      bottom: 675px;
+      width: 25%;
+    }
+    #watch {
+      top: 235px;
+      left: 446px;
+      width: 20%;
+    }
+  }
 }
 
-footer {
-  background-color: green;
+.hide-nav {
+  opacity: 0;
+  transition: 0.2s ease-out !important;
+  transform: translatey(15px);
+}
+
+.show-nav {
+  opacity: 1;
+  transform: translatey(-15px);
+  transition: 0.2s ease-in !important;
+}
+
+span {
+  display: inline-block;
+}
+
+#your-rules {
+  margin-top: -2%;
+}
+
+
+
+.inertia {
+  position: relative;
+}
+
+.demoWrapper {
+  position: relative;
+  width: 680px;
+  height: 400px;
+  -webkit-font-smoothing: antialiased;
+  margin: 50px auto;
+  perspective: 1100px;
+  transform-style: preserve-3d;
+  /* padding: 1px;*/
+  margin-bottom: 200px;
+  /*   background-color: #000; */
+
+
+}
+
+.box {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: #06f;
+  display: inline-block;
+  margin: 10px 20px 50px 235px;
+
+  overflow: hidden;
+}
+
+.creative-pro {
+  border: 1px solid red;
+  color: red;
+  background: transparent;
+  height: 600px;
+}
+
+.creative-pro:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
 }

@@ -5,3 +5,4 @@ const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
 import { gsap } from "./plugins/gsap.js";
+import { navbar } from "./plugins/navbar.js";

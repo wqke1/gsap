@@ -3283,7 +3283,7 @@
   "version" "4.2.10"
 
 "gsap@file:gsap-bonus.tgz":
-  "integrity" "sha512-FhaMh9UmPu3VKbnZE1Pqg6Ryc+z1GdHeB8KWljp4JbSwPOeQUjgsqSb7twQlJmNPnt8KF6v8iNz0xvNOJ/xsrw=="
+  "integrity" "sha512-pDhbxDJeZreZORpBacsNwMkJZtmnqwxDU5knDfLIf1l3YIzUggiIe1P2bz5QHu2mK5giSE3qgoZl28JHBoogTQ=="
   "resolved" "file:gsap-bonus.tgz"
   "version" "3.11.3"
 
